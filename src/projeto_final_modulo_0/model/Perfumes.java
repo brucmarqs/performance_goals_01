@@ -1,12 +1,12 @@
 package projeto_final_modulo_0.model;
 
-public class PerfumesDisponiveis {
+public class Perfumes {
 
     private String nomePerfume;
     private String marca;
     private float preco;
 
-    public PerfumesDisponiveis(String nomePerfume, String marca, float preco) {
+    public Perfumes(String nomePerfume, String marca, float preco) {
         this.nomePerfume = nomePerfume;
         this.marca = marca;
         this.preco = preco;
@@ -35,4 +35,12 @@ public class PerfumesDisponiveis {
     public void setPreco(float preco) {
         this.preco = preco;
     }
+
+    public void visualizarPerfumes() {
+        System.out.println("Nome do Perfume: " + getNomePerfume());
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Preço R$: " + getPreco());
+
+    }
+
 }
